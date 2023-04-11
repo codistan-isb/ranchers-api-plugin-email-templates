@@ -74,6 +74,18 @@ export default [
     subject: "{{shopName}}: Please verify your email address"
   },
 
+
+
+
+
+  {
+    language: "en",
+    title: "Accounts - Verify Account (via LaunchDock)",
+    name: "accounts/newEmail",
+    template: verifyEmailTemplate,
+    subject: "{{shopName}}: Please verify your email address"
+  },
+
   /*
    * Accounts - Verify Updated Email
    * When: A user changes their email

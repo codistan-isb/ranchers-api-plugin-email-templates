@@ -4,6 +4,7 @@ import resetPasswordTemplate from "./accounts/resetPassword.js";
 import welcomeEmailTemplate from "./accounts/sendWelcomeEmail.js";
 import verifyUpdatedEmailTemplate from "./accounts/verifyUpdatedEmail.js";
 import verifyEmailTemplate from "./accounts/verifyEmail.js";
+import verifyOTPEmailTemplate from "./accounts/newEmail.js";
 import coreOrderNewTemplate from "./orders/new.js";
 import orderShippedTemplate from "./orders/shipped.js";
 import orderRefundedTemplate from "./orders/refunded.js";
@@ -82,7 +83,7 @@ export default [
     language: "en",
     title: "Accounts - Verify Account (via LaunchDock)",
     name: "accounts/newEmail",
-    template: verifyEmailTemplate,
+    template: verifyOTPEmailTemplate,
     subject: "{{shopName}}: Please verify your email address"
   },
 

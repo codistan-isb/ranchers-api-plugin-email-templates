@@ -69,7 +69,7 @@ export default [
    */
   {
     language: "en",
-    title: "Accounts - Verify Account (via LaunchDock)",
+    title: "Accounts - Verify Account",
     name: "accounts/verifyEmail",
     template: verifyEmailTemplate,
     subject: "{{shopName}}: Please verify your email address"

@@ -14,10 +14,8 @@ import getTemplateConfig from "../util/getTemplateConfig.js";
  */
 export default async function renderEmail(context, { data, shopId, templateName, language }) {
   const { template, subject } = await getTemplateConfig(context, shopId, templateName, language);
-
   const renderSubject = Handlebars.compile(subject);
   const renderBody = Handlebars.compile(template);
-
   return {
     subject: renderSubject(data),
     html: renderBody(data)

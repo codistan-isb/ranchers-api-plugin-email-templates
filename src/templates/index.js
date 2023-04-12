@@ -83,7 +83,7 @@ export default [
     language: "en",
     title: "Accounts - Reset Password",
     name: "accounts/newEmail",
-    template: verifyEmailTemplate,
+    template: verifyOTPEmailTemplate,
     subject: "{{shopName}}: Please verify your email address"
   },
 

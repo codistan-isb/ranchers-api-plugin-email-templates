@@ -78,7 +78,7 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
                   <tr>
                     <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                         <td  align="center" valign="middle" style="font-family: 'Source Sans Pro', sans-serif; font-size:18px; font-weight:normal; line-height:18px;"><p>{{confirmationUrl}}</p></td>
+                         <td  align="center" valign="middle" style="font-family: 'Source Sans Pro', sans-serif; font-size:24px; font-weight:normal; line-height:18px;"><p><strong>{{confirmationUrl}}</strong></p></td>
                         <td>&nbsp;</td>
                       </tr>
                     </table></td>

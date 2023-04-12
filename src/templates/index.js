@@ -84,7 +84,7 @@ export default [
     title: "Accounts - Reset Password",
     name: "accounts/newEmail",
     template: verifyOTPEmailTemplate,
-    subject: "{{shopName}}: Please verify your email address"
+    subject: "{{shopName}}: OTP for reset password"
   },
 
   /*

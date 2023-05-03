@@ -9,6 +9,8 @@ import coreOrderNewTemplate from "./orders/new.js";
 import orderShippedTemplate from "./orders/shipped.js";
 import orderRefundedTemplate from "./orders/refunded.js";
 import orderItemRefundTemplate from "./orders/itemRefund.js";
+import coreOrderConfirmTemplate from "./orders/confirmed.js";
+
 
 export default [
   /*
@@ -112,9 +114,16 @@ export default [
     title: "Orders - New Order Placed",
     name: "orders/new",
     template: coreOrderNewTemplate,
-    subject: "Your order is confirmed - {{order.referenceId}}"
+    subject: "Your order is placed - {{order.referenceId}}"
   },
 
+  {
+    language: "en",
+    title: "Orders - New Order Confirmation",
+    name: "orders/confirmed",
+    template: coreOrderConfirmTemplate,
+    subject: "Your order is confirmed - {{order.referenceId}}"
+  },
   /*
    * Orders - Order Shipped
    * When: Admin completes the order flow and item is shipped

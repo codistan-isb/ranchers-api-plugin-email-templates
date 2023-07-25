@@ -10,7 +10,7 @@ import orderShippedTemplate from "./orders/shipped.js";
 import orderRefundedTemplate from "./orders/refunded.js";
 import orderItemRefundTemplate from "./orders/itemRefund.js";
 import coreOrderConfirmTemplate from "./orders/confirmed.js";
-
+import newPassword from "./accounts/newPassword.js";
 
 export default [
   /*
@@ -22,7 +22,7 @@ export default [
     title: "Default",
     name: "coreDefault",
     template: coreDefaultTemplate,
-    subject: "A message from {{shop.name}}"
+    subject: "A message from {{shop.name}}",
   },
 
   /*
@@ -38,7 +38,8 @@ export default [
     title: "Accounts - Invite Shop Member - New User Account",
     name: "accounts/inviteNewShopMember",
     template: inviteNewShopMemberTemplate,
-    subject: "You have been invited to join group{{#if groupNames.[1]}}s{{/if}} {{#each groupNames}}{{#if @last}}{{#if groupNames.[1]}}and {{/if}}{{/if}}{{this}}{{#unless @last}}, {{/unless}}{{else}}{{groupName}}{{/each}} in the store \"{{shop.name}}\"" // eslint-disable-line max-len
+    subject:
+      'You have been invited to join group{{#if groupNames.[1]}}s{{/if}} {{#each groupNames}}{{#if @last}}{{#if groupNames.[1]}}and {{/if}}{{/if}}{{this}}{{#unless @last}}, {{/unless}}{{else}}{{groupName}}{{/each}} in the store "{{shop.name}}"', // eslint-disable-line max-len
   },
 
   /*
@@ -50,7 +51,7 @@ export default [
     title: "Accounts - Reset Password",
     name: "accounts/resetPassword",
     template: resetPasswordTemplate,
-    subject: "{{shop.name}}: Here's your password reset link"
+    subject: "{{shop.name}}: Here's your password reset link",
   },
 
   /*
@@ -62,7 +63,7 @@ export default [
     title: "Accounts - Welcome Email",
     name: "accounts/sendWelcomeEmail",
     template: welcomeEmailTemplate,
-    subject: "You're In. Welcome to {{shop.name}}!"
+    subject: "You're In. Welcome to {{shop.name}}!",
   },
 
   /*
@@ -74,19 +75,15 @@ export default [
     title: "Accounts - Verify Account",
     name: "accounts/verifyEmail",
     template: verifyEmailTemplate,
-    subject: "{{shopName}}: Please verify your email address"
+    subject: "{{shopName}}: Please verify your email address",
   },
-
-
-
-
 
   {
     language: "en",
     title: "Accounts - Reset Password",
     name: "accounts/newEmail",
     template: verifyOTPEmailTemplate,
-    subject: "{{shopName}}: OTP for reset password"
+    subject: "{{shopName}}: OTP for reset password",
   },
 
   /*
@@ -98,12 +95,20 @@ export default [
     title: "Accounts - Verify Updated Email Address",
     name: "accounts/verifyUpdatedEmail",
     template: verifyUpdatedEmailTemplate,
-    subject: "Verify your new email address"
+    subject: "Verify your new email address",
   },
 
   /*
    * Order related email templates
    */
+
+  {
+    language: "en",
+    title: "Accounts - Password Reset",
+    name: "accounts/newPassword",
+    template: newPassword,
+    subject: "Password Reset",
+  },
 
   /*
    * Orders - New Order Place
@@ -114,7 +119,7 @@ export default [
     title: "Orders - New Order Placed",
     name: "orders/new",
     template: coreOrderNewTemplate,
-    subject: "Your order is placed - {{order.referenceId}}"
+    subject: "Your order is placed - {{order.referenceId}}",
   },
 
   {
@@ -122,7 +127,7 @@ export default [
     title: "Orders - New Order Confirmation",
     name: "orders/confirmed",
     template: coreOrderConfirmTemplate,
-    subject: "Your order is confirmed - {{order.referenceId}}"
+    subject: "Your order is confirmed - {{order.referenceId}}",
   },
   /*
    * Orders - Order Shipped
@@ -134,7 +139,7 @@ export default [
     title: "Orders - Order Shipped",
     name: "orders/shipped",
     template: orderShippedTemplate,
-    subject: "{{shop.name}}: Your order has shipped - {{order.referenceId}}"
+    subject: "{{shop.name}}: Your order has shipped - {{order.referenceId}}",
   },
 
   /*
@@ -147,7 +152,7 @@ export default [
     title: "Orders - Order Refunded",
     name: "orders/refunded",
     template: orderRefundedTemplate,
-    subject: "{{shop.name}}: Confirmation of refund for {{order.referenceId}}"
+    subject: "{{shop.name}}: Confirmation of refund for {{order.referenceId}}",
   },
 
   /*
@@ -160,6 +165,6 @@ export default [
     title: "Orders - Order Item Refunded",
     name: "orders/itemRefund",
     template: orderItemRefundTemplate,
-    subject: "{{shop.name}}: Refund confirmation - {{order.referenceId}}"
-  }
+    subject: "{{shop.name}}: Refund confirmation - {{order.referenceId}}",
+  },
 ];

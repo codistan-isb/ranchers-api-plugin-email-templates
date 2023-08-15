@@ -275,11 +275,7 @@ export default `
                                                       <td valign="middle" align="left" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">{{quantity}} x</td>
                                                       <td valign="top" align="center" width="30" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                                       <td valign="middle" align="left">
-                                                        {{#if imageURLs}}
-                                                          <img src="{{imageURLs.thumbnail}}" width="50" height="50" alt="" />
-                                                        {{else}}
-                                                          <img src="{{placeholderImage}}" width="50" height="50" alt="" />
-                                                        {{/if}}
+                            
                                                       </td>
                                                     </tr>
                                                   </tbody>
@@ -443,6 +439,5 @@ export default `
       </td>
     </tr>
   </table>
-
 </body>
 `;

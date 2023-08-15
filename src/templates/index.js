@@ -48,7 +48,7 @@ export default [
    */
   {
     language: "en",
-    title: "Accounts - Reset Password",
+    title: "Accounts - OTP for Email/Password Verification",
     name: "accounts/resetPassword",
     template: resetPasswordTemplate,
     subject: "{{shop.name}}: Here's your password reset link",

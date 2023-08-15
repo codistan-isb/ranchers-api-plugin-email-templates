@@ -80,10 +80,10 @@ export default [
 
   {
     language: "en",
-    title: "Accounts - Reset Password",
+    title: "Accounts - OTP for Verification",
     name: "accounts/newEmail",
     template: verifyOTPEmailTemplate,
-    subject: "{{shopName}}: OTP for reset password",
+    subject: "{{shopName}}: OTP for Email/Password verification",
   },
 
   /*

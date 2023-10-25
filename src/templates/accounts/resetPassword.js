@@ -63,13 +63,13 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
 
                   <!-- Begin Body -->
                   <tr>
-                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:22px; font-weight:bold; line-height:22px; color:#1e98d5; letter-spacing: -0.7px;">Reset Your Password</td>
+                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:22px; font-weight:bold; line-height:22px; color:#1e98d5; letter-spacing: -0.7px;">Reset/Forget Your Password</td>
                   </tr>
                   <tr>
                     <td height="20" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:13px; line-height:18px; color:#4d4d4d; letter-spacing: -0.5px;">We've received a request to reset your password. If you didn't make the request, you can just ignore this email.</td>
+                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:13px; line-height:18px; color:#4d4d4d; letter-spacing: -0.5px;">We've received a request to reset/forget your password. If you didn't make the request, you can just ignore this email.</td>
                   </tr>
                   <tr>
                     <td height="25" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
@@ -77,7 +77,7 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
                   <tr>
                     <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
-                        <td width="223" height="40" align="center" valign="middle" bgcolor="#1999dd" style="font-family: 'Source Sans Pro', sans-serif; font-size:18px; font-weight:normal; line-height:18px;"><a href="{{passwordResetUrl}}" style="text-decoration:none; color:#ffffff;">Reset Password</a></td>
+                        <td width="223" height="40" align="center" valign="middle" bgcolor="#1999dd" style="font-family: 'Source Sans Pro', sans-serif; font-size:18px; font-weight:normal; line-height:18px;"><a href="{{passwordResetUrl}}" style="text-decoration:none; color:#ffffff;">Reset/forget Password</a></td>
                         <td>&nbsp;</td>
                       </tr>
                     </table></td>

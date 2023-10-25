@@ -199,7 +199,7 @@ export default `
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
                                           <tbody>
                                             <tr>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Shipping Address</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Delivery Address</td>
                                               <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Billing Address</td>
                                               <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Payment Type</td>
                                             </tr>
@@ -281,7 +281,7 @@ export default `
                                                 <table width="360" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
                                                   <tbody>
                                                     <tr>
-                                                      <td align="left" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;">{{variantTitle}}</td>
+                                                      <td align="left" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;">{{title}}</td>
                                                       <td align="right" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;"> Rs {{price.displayAmount}}</td>
                                                     </tr>
                                                   </tbody>
@@ -312,7 +312,7 @@ export default `
                                               <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Subtotal:  Rs  {{this.totalAmount}}</td>
                                             </tr>
                                             <tr>
-                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Shipping: Rs: 50 </td>
+                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Delivery Charges: Rs: 50 </td>
                                             </tr>
                                             <tr>
                                               <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Tax: Rs {{this.tax}}</td>

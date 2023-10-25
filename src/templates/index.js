@@ -119,7 +119,7 @@ export default [
     title: "Orders - New Order Placed",
     name: "orders/new",
     template: coreOrderNewTemplate,
-    subject: "Your order is placed - {{order.referenceId}}",
+    subject: "Your order is placed - {{order.kitchenOrderID}}",
   },
 
   {

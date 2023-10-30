@@ -233,9 +233,7 @@ export default `
                                                 {{/with}}
                                               </td>
                                               <td width="33%" align="left" valign="top" style="font-size:10px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">
-                                                {{#each billing.payments}}
-                                                  Cash on Delivery ({{this.displayAmount}})<br />
-                                                {{/each}}
+                                                  Cash on Delivery <br />
                                               </td>
                                             </tr>
                                             <tr>
@@ -282,7 +280,7 @@ export default `
                                                   <tbody>
                                                     <tr>
                                                       <td align="left" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;">{{title}}</td>
-                                                      <td align="right" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;"> Rs {{price.displayAmount}}</td>
+                                                      <td align="right" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;"> {{price.displayAmount}}</td>
                                                     </tr>
                                                   </tbody>
                                                 </table>

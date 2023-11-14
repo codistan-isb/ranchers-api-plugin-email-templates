@@ -53,9 +53,7 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
                   <tr>
                     <td height="34" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
-                  <tr>
-                    <td align="left" valign="top"><a href="#"><img src="{{emailLogo}}" width="49" height="49" alt="logo"></a></td>
-                  </tr>
+                
                   <tr>
                     <td height="32" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
@@ -63,13 +61,13 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
 
                   <!-- Begin Body -->
                   <tr>
-                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:22px; font-weight:bold; line-height:22px; color:#1e98d5; letter-spacing: -0.7px;">Reset/Forget Your Password</td>
+                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:22px; font-weight:bold; line-height:22px; color:#ff6900; letter-spacing: -0.7px;">Reset/Forget Your Password</td>
                   </tr>
                   <tr>
                     <td height="20" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:13px; line-height:18px; color:#4d4d4d; letter-spacing: -0.5px;">We've received a request to reset/forget your password. If you didn't make the request, you can just ignore this email.</td>
+                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:13px; line-height:18px; color:#ff6900; letter-spacing: -0.5px;">We've received a request to reset/forget your password. If you didn't make the request, you can just ignore this email.</td>
                   </tr>
                   <tr>
                     <td height="25" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>

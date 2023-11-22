@@ -307,15 +307,17 @@ export default `
                                               <td valign="top" align="left" height="20" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Subtotal:  Rs  {{this.totalAmount}}</td>
-                                            </tr>
-                                            <tr>
-                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Delivery Charges: Rs: 50 </td>
-                                            </tr>
-                                            <tr>
+                                            <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Subtotal: {{this.itemsTotal}}</td>
+                                          </tr>        
+                                          <tr>
                                               <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Tax: Rs {{this.tax}}</td>
                                             </tr>
-                                            
+                                            <tr>
+                                            <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Delivery Charges: Rs: 50 </td>
+                                          </tr>
+                                          <tr>
+                                    <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Discount: Rs {{this.discountedValue}}</td>
+                                         </tr>                               
                                             <tr>
                                               <td valign="top" align="left" height="10" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                             </tr>
@@ -343,6 +345,7 @@ export default `
                                     </tr>
                                    
                                     {{/each}}
+                                   
                                   </tbody>
                                 </table>
                               </td>

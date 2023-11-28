@@ -2,7 +2,7 @@
 export default `
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <title>Order Confirm Email</title>
+  <title>Order Shipped Email</title>
   <style type="text/css">
     /* Media Query for mobile */
 
@@ -121,7 +121,7 @@ export default `
                   <td height="10" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                 </tr>
                 <tr>
-                  <td height="4" align="left" valign="top" bgcolor="#1999dd" style="font-size:1px; line-height:1px;">&nbsp;</td>
+                  <td height="4" align="left" valign="top" bgcolor="#fcb900" style="font-size:1px; line-height:1px;">&nbsp;</td>
                 </tr>
                 <tr>
                   <td align="center" valign="top">
@@ -134,17 +134,14 @@ export default `
                             <tr>
                               <td height="34" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
-                            <tr>
-                              <td align="left" valign="top">
-                                <a href="#"><img src="{{emailLogo}}" width="49" height="49"
-                                      alt="logo"></a>
-                              </td>
-                            </tr>
+                          
                             <tr>
                               <td height="31" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:22px; font-weight:bold; line-height:22px; color:#1e98d5;">Your order is on its way</td>
+                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:22px; font-weight:bold; line-height:22px; color:#fcb900;">Your order is on its way
+
+</td>
                             </tr>
                             <!-- End Header -->
 
@@ -163,7 +160,7 @@ export default `
                                             <tr>
                                               <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Your Order</td>
                                               <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Order Date</td>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Tracking Number</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Status</td>
                                             </tr>
                                           </tbody>
                                         </table>
@@ -184,13 +181,9 @@ export default `
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
                                           <tbody>
                                             <tr>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#1999dd; font-family:Arial, helvetica;"><a href="{{orderUrl}}" style="color:#1999dd;">{{order.referenceId}}</a></td>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">{{orderDate}}</td>
-                                              {{#if shipping.tracking}}
-                                                <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">{{shipping.carrier}}<br />{{shipping.tracking}}</td>
-                                              {{else}}
-                                                <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Tracking not available</td>
-                                              {{/if}}
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#7E0B12; font-weight:bold; font-family:Arial, helvetica;">{{order.kitchenOrderID}}</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#7E0B12; font-weight:bold; font-family:Arial, helvetica;">{{orderDate}}</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#7E0B12; font-weight:bold; font-family:Arial, helvetica;">Shipped</td>
                                             </tr>
                                           </tbody>
                                         </table>
@@ -208,7 +201,7 @@ export default `
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
                                           <tbody>
                                             <tr>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Shipping Address</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Delivery Address</td>
                                               <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Billing Address</td>
                                               <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica; font-weight:bold;">Payment Type</td>
                                             </tr>
@@ -242,9 +235,7 @@ export default `
                                                 {{/with}}
                                               </td>
                                               <td width="33%" align="left" valign="top" style="font-size:10px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">
-                                                {{#each billing.payments}}
-                                                  {{this.displayName}} ({{this.displayAmount}})<br />
-                                                {{/each}}
+                                                  Cash on Delivery <br />
                                               </td>
                                             </tr>
                                             <tr>
@@ -276,14 +267,10 @@ export default `
                                                       <td valign="middle" align="left" height="15" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                                     </tr>
                                                     <tr>
-                                                      <td valign="middle" align="left" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">{{quantity}} x</td>
+                                                      <td valign="middle" align="left" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;">{{quantity}}</td>
                                                       <td valign="top" align="center" width="30" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                                       <td valign="middle" align="left">
-                                                        {{#if imageURLs}}
-                                                          <img src="{{imageURLs.thumbnail}}" width="50" height="50" alt="" />
-                                                        {{else}}
-                                                          <img src="{{placeholderImage}}" width="50" height="50" alt="" />
-                                                        {{/if}}
+                            
                                                       </td>
                                                     </tr>
                                                   </tbody>
@@ -294,8 +281,8 @@ export default `
                                                 <table width="360" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
                                                   <tbody>
                                                     <tr>
-                                                      <td align="left" valign="middle" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">{{variantTitle}}</td>
-                                                      <td align="right" valign="middle" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">{{price.displayAmount}}</td>
+                                                      <td align="left" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;">{{title}}</td>
+                                                      <td align="right" valign="middle" style="font-size:12px; line-height:normal; color:#fcb900; font-family:Arial, helvetica;"> {{price.displayAmount}}</td>
                                                     </tr>
                                                   </tbody>
                                                 </table>
@@ -312,6 +299,8 @@ export default `
                                       <td valign="top" align="left" height="2" style="line-height:1px; font-size:1px; border-top:solid 2px #efefee;">&nbsp;</td>
                                     </tr>
                                     {{/each}}
+                                    {{#each order.payments}}
+                                                
                                     <tr>
                                       <td valign="top" align="right">
                                         <table width="210" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
@@ -320,17 +309,17 @@ export default `
                                               <td valign="top" align="left" height="20" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                             </tr>
                                             <tr>
-                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Subtotal: {{billing.subtotal}}</td>
+                                            <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Subtotal: {{this.itemsTotal}}</td>
+                                          </tr>        
+                                          <tr>
+                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Tax: Rs {{this.tax}}</td>
                                             </tr>
                                             <tr>
-                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Shipping: {{billing.shipping}}</td>
-                                            </tr>
-                                            <tr>
-                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Tax: {{billing.taxes}}</td>
-                                            </tr>
-                                            <tr>
-                                              <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Discounts: {{billing.discounts}}</td>
-                                            </tr>
+                                            <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Delivery Charges: Rs: 50 </td>
+                                          </tr>
+                                          <tr>
+                                    <td valign="top" align="right" style="font-size:12px; line-height:normal; color:#4c4c4d; font-family:Arial, helvetica;">Discount: Rs {{this.discountedValue}}</td>
+                                         </tr>                               
                                             <tr>
                                               <td valign="top" align="left" height="10" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                             </tr>
@@ -346,7 +335,7 @@ export default `
                                                   <tbody>
                                                     <tr>
                                                       <td valign="top" align="left" style="font-size:12px; line-height:normal; color:#a2a1a3; font-family:Arial, helvetica;">ORDER TOTAL:</td>
-                                                      <td valign="top" align="right" style="font-size:22px; line-height:normal; color:#4d4d4e; font-family:Arial, helvetica;">{{billing.total}}</td>
+                                                      <td valign="top" align="right" style="font-size:18px; line-height:normal; color:#4d4d4e; font-family:Arial, helvetica;"> Rs {{this.finalAmount}}</td>
                                                     </tr>
                                                   </tbody>
                                                 </table>
@@ -356,6 +345,9 @@ export default `
                                         </table>
                                       </td>
                                     </tr>
+                                   
+                                    {{/each}}
+                                   
                                   </tbody>
                                 </table>
                               </td>
@@ -367,13 +359,13 @@ export default `
                               <td height="32" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td height="1" align="left" valign="middle" bgcolor="#e2e2e2" style="font-size:1px; line-height:1px;">&nbsp;</td>
+                              <td height="1" align="left" valign="middle" bgcolor="#fcb900" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
                             <tr>
                               <td height="15" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; line-height:17px;">You received this email because you created an order with {{shopName}}. Questions or suggestions? Email us at <a href="mailto:{{contactEmail}}" style="text-decoration:none; color:#1e98d5;">{{contactEmail}}</a></td>
+                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; line-height:17px;">You received this email because you created an order with {{shopName}}. Questions or suggestions? Email us at <a href="mailto:{{contactEmail}}" style="text-decoration:none; color:#fcb900;">{{contactEmail}}</a></td>
                             </tr>
                             <!-- Begin Social Icons -->
                             {{#if socialLinks.display}}
@@ -418,13 +410,13 @@ export default `
                             {{/if}}
                             <!-- End Social Icons -->
                             <tr>
-                              <td height="3" align="left" valign="top" bgcolor="#1f97d4" style="font-size:1px; line-height:1px;">&nbsp;</td>
+                              <td height="3" align="left" valign="top" bgcolor="#ff6900" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
                             <tr>
                               <td height="18" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; line-height:12px; color:#4d4c4d;">&copy; {{copyrightDate}} {{#if legalName}}{{legalName}}{{else}}{{shopName}}{{/if}}. All rights reserved</td>
+                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:12px; font-weight:normal; line-height:12px; color:#cf2e2e;">&copy; {{copyrightDate}} {{#if legalName}}{{legalName}}{{else}}{{shopName}}{{/if}}. All rights reserved</td>
                             </tr>
                             <tr>
                               <td height="8" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
@@ -447,6 +439,5 @@ export default `
       </td>
     </tr>
   </table>
-
 </body>
 `;

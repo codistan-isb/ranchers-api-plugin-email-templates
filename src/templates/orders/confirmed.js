@@ -139,7 +139,7 @@ export default `
                               <td height="31" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                             </tr>
                             <tr>
-                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:22px; font-weight:bold; line-height:22px; color:#fcb900;">Your Order has been Confirmed
+                              <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:20px; font-weight:bold; line-height:22px; color:#fcb900;">Good Fellas!<br /> <br /> Your Order has been confirmed and in kitchen for preparation<br />
 </td>
                             </tr>
                             <!-- End Header -->
@@ -180,9 +180,9 @@ export default `
                                         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="emailwrapto100pc">
                                           <tbody>
                                             <tr>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#7E0B12; font-weight:bold; font-family:Arial, helvetica;">{{order.kitchenOrderID}}</td>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#7E0B12; font-weight:bold; font-family:Arial, helvetica;">{{orderDate}}</td>
-                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#7E0B12; font-weight:bold; font-family:Arial, helvetica;">Not shipped</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#00d084; font-weight:bold; font-family:Arial, helvetica;">{{order.kitchenOrderID}}</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#00d084; font-weight:bold; font-family:Arial, helvetica;">{{orderDate}}</td>
+                                              <td width="33%" align="left" valign="top" style="font-size:14px; line-height:normal; color:#00d084; font-weight:bold; font-family:Arial, helvetica;">In Kitchen (Preparing your meal)</td>
                                             </tr>
                                           </tbody>
                                         </table>
@@ -208,7 +208,6 @@ export default `
                                         </table>
                                       </td>
                                     </tr>
-
                                     <tr>
                                       <td valign="top" align="left" height="15" style="line-height:1px; font-size:1px;">&nbsp;</td>
                                     </tr>

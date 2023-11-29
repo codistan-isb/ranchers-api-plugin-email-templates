@@ -124,10 +124,10 @@ export default [
 
   {
     language: "en",
-    title: "Orders - New Order Confirmation",
+    title: "Orders - Order Confirmation",
     name: "orders/confirmed",
     template: coreOrderConfirmTemplate,
-    subject: "Your order is confirmed - {{order.referenceId}}",
+    subject: "Your order is confirmed - {{order.kitchenOrderID}}",
   },
   /*
    * Orders - Order Shipped
@@ -139,7 +139,7 @@ export default [
     title: "Orders - Order Shipped",
     name: "orders/shipped",
     template: orderShippedTemplate,
-    subject: "{{shop.name}}: Your order has shipped - {{order.referenceId}}",
+    subject: "{{shop.name}}: Your order has been shipped - {{order.kitchenOrderID}}",
   },
 
   /*

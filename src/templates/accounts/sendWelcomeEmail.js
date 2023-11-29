@@ -67,11 +67,14 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
                     <td height="20" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:13px; font-weight:bold; line-height:18px; color:#fcb900; letter-spacing: -0.5px;">Welcome to {{shopName}}.</td>
+                    <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:13px; font-weight:bold; line-height:18px; color:#fcb900; letter-spacing: -0.5px;">Welcome to {{shopName}}! Get ready to savor mouthwatering moments with our delectable offerings. Start your culinary journey now! </td>
                   </tr>
                   <tr>
                     <td height="25" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
+                  <tr>
+                  <td align="left" valign="top" style="font-family: 'Lato', sans-serif; font-size:13px; line-height:18px; color:#fcb900; letter-spacing: -0.5px;"><br />Thanks!<br />The {{shopName}} Team<br /><br /></td>
+                </tr>
                   <tr>
                     <td align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="0">
                       <tr>
@@ -80,6 +83,7 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
                       </tr>
                     </table></td>
                   </tr>
+                  
                   <!-- End Body -->
 
                   <!-- Begin Footer -->

@@ -150,9 +150,6 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
                     <td height="8" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td align="left" valign="top" style="font-family:Arial, Helvetica, sans-serif; font-size:10px; font-weight:normal; line-height:10px; color:#787878;">{{physicalAddress.address}}, {{physicalAddress.city}}, {{physicalAddress.region}} {{physicalAddress.postal}}</td>
-                  </tr>
-                  <tr>
                     <td height="19" align="left" valign="top" style="font-size:1px; line-height:1px;">&nbsp;</td>
                   </tr>
                   <!-- End Footer -->
@@ -168,6 +165,5 @@ table[class=wrap1001], td[class=wrap1001] { width:96% !important; margin:0 !impo
     </td>
   </tr>
 </table>
-
 </body>
 `;

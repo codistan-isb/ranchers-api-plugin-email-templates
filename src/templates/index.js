@@ -11,6 +11,7 @@ import orderRefundedTemplate from "./orders/refunded.js";
 import orderItemRefundTemplate from "./orders/itemRefund.js";
 import coreOrderConfirmTemplate from "./orders/confirmed.js";
 import newPassword from "./accounts/newPassword.js";
+import orderDeliveredTemplate from './orders/delivered.js'
 
 export default [
   /*
@@ -128,6 +129,13 @@ export default [
     name: "orders/confirmed",
     template: coreOrderConfirmTemplate,
     subject: "Your order is confirmed - {{order.kitchenOrderID}}",
+  },
+  {
+    language: "en",
+    title: "Orders - Order Delivered",
+    name: "orders/delivered",
+    template: orderDeliveredTemplate,
+    subject: "Your order is delivered - {{order.kitchenOrderID}}",
   },
   /*
    * Orders - Order Shipped
